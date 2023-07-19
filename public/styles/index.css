@@ -1,0 +1,100 @@
+body {
+  background-color: #000000;
+  color: white;
+}
+
+.home-container {
+  background-image: url(/images/sunrise.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 830px;
+  width: 1440px;
+  margin: 0;
+}
+
+#title {
+  position: absolute;
+  left: 111px;
+  top: 160px;
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 72px;
+  color: #DB5A05;
+  text-shadow: 0px 4px 4px #000000c2;
+}
+
+#subtitle {
+  position: absolute;
+  left: 111px;
+  top: 260px;
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 52px;
+  color: #c8d7d4;
+  text-shadow: 0px 4px 4px #000000;
+}
+
+.about {
+  position: absolute;
+  left: 108px;
+  top: 430px;
+  background-color: #33333370;
+  width: 638px;
+  height: 161px;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-family: 'Inter';
+  font-size: 18px;
+  color: #c8d7d4
+}
+
+#home-nav {
+  position: absolute;
+  left: 294px;
+  top: 700px;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF934C;
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  justify-content: space-around;
+}
+
+.projects {
+  position: absolute;
+  top: 900px;
+  left: 111px;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  color: #FF934C;
+}
+
+.underline:hover {
+    cursor: pointer;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FF934C;
+  transition: transform 0.25s ease-out;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+}
