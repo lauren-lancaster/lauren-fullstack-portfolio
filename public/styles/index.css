@@ -1,3 +1,9 @@
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+   box-sizing: border-box; 
+}
+
 body {
   background-color: #000000;
   color: white;
@@ -53,24 +59,44 @@ body {
   color: #c8d7d4
 }
 
-#home-nav {
+.navbar {
   position: absolute;
-  left: 294px;
+  margin: 0;
+  left: 0px;
   top: 700px;
+  height: 1000px;
+  /* z-index: -1;  */
+}
+
+
+#home-nav {
+  position: sticky;
+  top: 0;
+  left: 294px;
   font-family: 'Inter';
   font-size: 24px;
   font-weight: bold;
   color: #FF934C;
   display: flex;
   flex-direction: row;
-  width: 800px;
+  width: 1440px;
   justify-content: space-around;
+  background-color: #000000;
+  z-index: 1;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #FF934C;
 }
 
 .projects {
   position: absolute;
-  top: 900px;
-  left: 111px;
+  top: 750px;
+  left: 0px;
+  width: 1440px;
+  background-color: #000000;
+  padding: 200px;
 }
 
 .underline {

@@ -17,6 +17,9 @@ function Home() {
           </p>
         </div>
       </div>
+      <div className="navbar">
+        <Nav />
+      </div>
       <div className="projects">
         <Projects />
       </div>
