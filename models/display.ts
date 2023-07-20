@@ -5,5 +5,10 @@ export interface Display {
   complete: string
   title: string
   description: string
-  route: string
+  github: string
+  url: string
+  created_at: string
+  tech: string
+  full_description: string
+  reflections: string
 }

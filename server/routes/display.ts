@@ -12,4 +12,14 @@ router.get('/', async (req, res, next) => {
   }
 })
 
+router.get('/:id', async (req, res, next) => {
+  const id = Number(req.params.id)
+  try {
+    const project = await db.getOneProject(id)
+    res.json(project)
+  } catch (e) {
+    next(e)
+  }
+})
+
 export default router

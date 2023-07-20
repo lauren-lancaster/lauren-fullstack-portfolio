@@ -14,7 +14,12 @@ exports.seed = async function (knex) {
       title: 'ESC',
       description:
         'A virtual escape room that tracks your time through a series of puzzles and mini games',
-      route: '/esc',
+      github: '',
+      url: '',
+      created_at: '',
+      tech: '',
+      full_description: '',
+      reflections: '',
     },
     {
       id: 2,
@@ -24,7 +29,12 @@ exports.seed = async function (knex) {
       title: 'Reading Tracker',
       description:
         'An app where you can list and review the books you have read',
-      route: '/reading-tracker',
+      github: '',
+      url: '',
+      created_at: '',
+      tech: '',
+      full_description: '',
+      reflections: '',
     },
     {
       id: 3,
@@ -34,7 +44,12 @@ exports.seed = async function (knex) {
       title: 'Effects Controller',
       description:
         'The design and prototype for a French horn effects controller',
-      route: '/effects-controller',
+      github: '',
+      url: '',
+      created_at: '',
+      tech: '',
+      full_description: '',
+      reflections: '',
     },
     {
       id: 4,
@@ -44,7 +59,12 @@ exports.seed = async function (knex) {
       title: 'Audio Visualiser',
       description:
         'An audio visualiser that can record, save, and playback sound',
-      route: '/audio-visualiser',
+      github: '',
+      url: '',
+      created_at: '',
+      tech: '',
+      full_description: '',
+      reflections: '',
     },
   ])
 }

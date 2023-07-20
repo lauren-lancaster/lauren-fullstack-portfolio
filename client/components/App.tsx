@@ -1,9 +1,14 @@
-import { Outlet } from 'react-router-dom'
+import Home from './Home'
+import Project from './Project'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <>
-      <Outlet />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:id" element={<Project />} />
+      </Routes>
     </>
   )
 }
