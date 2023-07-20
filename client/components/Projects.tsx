@@ -1,8 +1,36 @@
+import * as displayActions from '../actions/display'
+import { Link } from 'react-router-dom'
+import { useAppSelector, useAppDispatch } from '../hooks/hooks'
+import { Display } from '../../models/display'
+import { useEffect } from 'react'
+
 function Projects() {
+  const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    dispatch(displayActions.getProjectsThunk())
+  }, [dispatch])
+
+  const projects = useAppSelector((state) => state.display as Display[])
+
   return (
     <>
       <h3>Projects</h3>
-      <div className="project">
+      {projects.map((project: Display, i: number) => {
+        return (
+          <>
+            <div className="project" key={i}>
+              <p className="project-school">{project.school}</p>
+              <p className="project-group">{project.group}</p>
+              <p className="project-complete">{project.complete}</p>
+              <p className="project-name">{project.title}</p>
+              <p className="project-description">{project.description}</p>
+              <button>Learn more</button>
+            </div>
+          </>
+        )
+      })}
+      {/* <div className="project">
         <p className="project-school">Dev Academy</p>
         <p className="project-group">Group Project</p>
         <p className="project-complete">Complete</p>
@@ -42,7 +70,7 @@ function Projects() {
           An audio visualiser that can record, save, and playback sound
         </p>
         <button>Learn more</button>
-      </div>
+      </div> */}
     </>
   )
 }
