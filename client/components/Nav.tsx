@@ -1,7 +1,9 @@
 function Nav() {
   return (
     <div id="home-nav">
-      <p className="underline">CV</p>
+      <a href="/files/cv.pdf" download>
+        <p className="underline">CV</p>
+      </a>
       <p className="underline">About Me</p>
       <a href="https://github.com/lauren-lancaster">
         <p className="underline">GitHub</p>
