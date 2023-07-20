@@ -6,11 +6,13 @@ import {
 
 import App from './components/App'
 import Home from './components/Home'
+import Project from './components/Project'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />}></Route>
+      <Route path="/project/:id" element={<Project />}></Route>
     </Route>,
   ),
 )

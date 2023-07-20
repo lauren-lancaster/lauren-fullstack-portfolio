@@ -11,7 +11,12 @@ exports.up = function (knex) {
     table.string('complete')
     table.string('title')
     table.string('description')
-    table.string('route')
+    table.string('github')
+    table.string('url')
+    table.string('created_at')
+    table.string('tech')
+    table.string('full_description')
+    table.string('reflections')
   })
 }
 
