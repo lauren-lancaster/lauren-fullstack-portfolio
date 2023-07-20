@@ -48,7 +48,6 @@ export function getOneProjectThunk(id: number): ThunkAction {
   return async (dispatch) => {
     try {
       const project = await api.getOneProject(id)
-      console.log('action', project)
       dispatch(getOneProject(project))
     } catch (err) {
       dispatch(showError(String(err)))

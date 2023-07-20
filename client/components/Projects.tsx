@@ -1,10 +1,16 @@
-import * as displayActions from '../actions/display'
 import { Link } from 'react-router-dom'
 import { useAppSelector, useAppDispatch } from '../hooks/hooks'
 import { Display } from '../../models/display'
 import { useEffect } from 'react'
+import * as displayActions from '../actions/display'
 
 function Projects() {
+  const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    dispatch(displayActions.getProjectsThunk())
+  }, [dispatch])
+
   const projects = useAppSelector((state) => state.display as Display[])
 
   return (
