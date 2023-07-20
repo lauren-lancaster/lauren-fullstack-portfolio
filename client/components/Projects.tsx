@@ -15,18 +15,18 @@ function Projects() {
 
   return (
     <>
-      <h3>Projects</h3>
+      <h3 id="projects-title">Projects</h3>
       {projects.map((project: Display, i: number) => {
         return (
           <>
             <div className="project" key={i}>
+              <p className="project-name">{project.title}</p>
               <p className="project-school">{project.school}</p>
               <p className="project-group">{project.group}</p>
               <p className="project-complete">{project.complete}</p>
-              <p className="project-name">{project.title}</p>
               <p className="project-description">{project.description}</p>
               <Link to={`/project/${project.id}`}>
-                <button>Learn More</button>
+                <button id="project-btn">Learn More</button>
               </Link>
             </div>
           </>
