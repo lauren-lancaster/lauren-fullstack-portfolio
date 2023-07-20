@@ -12,7 +12,7 @@ router.get('/', async (req, res, next) => {
   }
 })
 
-router.get('/:id', async (req, res, next) => {
+router.get('/project/:id', async (req, res, next) => {
   const id = Number(req.params.id)
   try {
     const project = await db.getOneProject(id)
