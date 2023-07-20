@@ -14,7 +14,7 @@ function Home() {
           <p>
             I’m Lauren and I’m a software developer with a background in
             classical music and an interest in music technologies. Check out my
-            projects below to see what I've been working on!
+            projects below to see what I’ve been working on!
           </p>
         </div>
       </div>
